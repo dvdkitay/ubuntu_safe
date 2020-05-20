@@ -1,0 +1,11 @@
+[Unit]
+Description=TorConnect
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=sudo python -m toriptables2 -l
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
