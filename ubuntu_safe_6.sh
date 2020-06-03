@@ -45,14 +45,6 @@ sudo chown root.root toriptables2.py
 sudo chmod +x toriptables2.py
 cd ~
 
-echo -e "${LCYAN}systemctl daemon-reload torconnect.service..."
-tput sgr0
-
-sudo cp torconnect.service /etc/systemd/system/
-cd /etc/systemd/system
-systemctl daemon-reload
-systemctl enable torconnect.service
-
 echo -e "${LCYAN}Install python and start toriptables2..."
 tput sgr0
 
